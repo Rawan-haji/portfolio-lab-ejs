@@ -1,0 +1,24 @@
+
+<%- include('./parcials/nav') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skills</title>
+        <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>my skills</h1>
+    <div class="skills-list">
+    <% allSkills.forEach(skill => { %>
+       <div class="skill-card">
+<p><%=skill.name%></p>
+<div class="skill-details">
+<p> <%=skill.category%>, <%=skill.level%>, <%=skill.description%></p>
+</div>
+</div>
+  <%})%> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+<%- include('./parcials/nav') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+        <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="projects-list">
+
+        <% projects.forEach(project => { %>
+            
+            <div class="project-card">
+                <h2 id="title"><%= project.title %></h2>
+                <!-- <img src="<%= project.image %>" alt="<%= project.title %> screenshot" width="200"> -->
+                
+                <a href="/projects/<%= project.id %>">View Project Details</a>
+            </div>
+            <hr>
+
+        <% }) %>
+    </div>   
+
+</body>
+</html>

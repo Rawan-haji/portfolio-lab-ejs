@@ -1,0 +1,103 @@
+body{
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:24px;
+}
+
+h2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.project-card{
+   background-color: #FFA6B9;   
+    border: 1px solid #e95a74;   
+    border-radius: 24px;         
+    width: 300px;               
+    min-height: 300px;           
+    padding: 24px;               
+    
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    text-align: center;
+}
+
+.projects-list{
+   display: flex;
+    flex-direction: row;        
+    justify-content: center;    
+    gap: 24px;                  
+    flex-wrap: wrap;            
+    padding: 20px;
+    align-items: center;
+}
+
+#title{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    
+}
+
+img{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    
+}
+
+ul{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    align-items: center;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: row;        
+    justify-content: center;    
+    gap: 24px;                  
+    flex-wrap: wrap;            
+    padding: 20px;
+}
+
+.skill-card {
+    background-color: #df8d9f;   
+    border: 1px solid #f190a2;   
+    border-radius: 24px;         
+    width: 280px;                
+    min-height: 280px;           
+    padding: 24px;               
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;            
+}
+
+.skill-details p {
+    color: gray;
+    font-size: 0.95rem;
+    margin: 8px 0;
+    
+}
+
+
+.skill-details .desc {
+    margin-top: 15px;
+    font-style: italic;
+    color:gray;
+}
